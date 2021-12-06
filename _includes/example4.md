@@ -1,0 +1,1 @@
+Várias opções de filtros para refinar as suas buscas.

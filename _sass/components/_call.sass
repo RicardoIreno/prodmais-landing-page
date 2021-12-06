@@ -1,0 +1,46 @@
+$callHeight: 700px
+
+.call
+  padding: 4rem auto
+  height: $callHeight
+  background-image: url('/assets/img/chart_mobo.jpg')
+  background-size:     cover                    
+  background-repeat:   no-repeat
+  background-position: center center;
+
+  &__content
+    @include flex(column, center, center)
+    height: $callHeight
+    background-color: rgba(28, 154, 209, 0.7 )
+    
+    h2, h3
+      color: #beeaff
+
+    p
+      font-size: 1.5rem
+      color: #fff
+      text-align: center
+
+  &__logoWrapper
+    @include flex(column, center)
+
+  &__logoWrapper svg
+    fill: #fff
+    margin: 2rem auto
+    width: 400px
+    max-width: 80%
+
+  &__btn
+    font-size: 1.4rem
+
+  &__btns
+      @include flex(column, center)
+      margin-top: 3rem
+
+
+
+@include breakpoint(medium-up)
+  .call
+    background-image: url('/assets/img/chart_desk.jpg')
+
+

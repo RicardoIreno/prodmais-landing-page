@@ -1,0 +1,48 @@
+
+.with-wrapper 
+  width: 100%;
+  @include laterais(large);
+
+@include breakpoint(small-only)
+  .with-wrapper 
+    @include laterais(small);
+  
+
+  
+// -- Services -- //
+
+.service
+  @include flex(row, center)
+
+  &__item
+    @include flex(column, center)
+    margin: .5rem 2rem
+
+  &__item svg
+    width: 20%
+    margin: 0 auto
+
+  &__item p
+    text-align: center
+
+// -- Features -- //
+
+
+.anotherLogos 
+  @include flex(column, center)
+
+  &__logo
+    width: 220px
+    margin: 1rem auto
+
+
+@include breakpoint(medium-up)
+  .anotherLogos 
+    @include flex(row, center)
+    max-width: 500px
+    margin: 0 auto
+        
+    &__logo 
+      padding: 1rem
+    
+

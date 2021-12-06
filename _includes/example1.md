@@ -1,0 +1,1 @@
+Visual limpo com as principais opções de busca a um clique. 

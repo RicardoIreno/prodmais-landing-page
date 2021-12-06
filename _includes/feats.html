@@ -1,0 +1,83 @@
+<section class="feats__wrapper">
+  {% capture my_include1 %}{% include example1.md %}{% endcapture %}
+  {% capture my_include2 %}{% include example2.md %}{% endcapture %}
+  {% capture my_include3 %}{% include example3.md %}{% endcapture %}
+  {% capture my_include4 %}{% include example4.md %}{% endcapture %}
+  {% capture my_include5 %}{% include example5.md %}{% endcapture %}
+  
+  <div class="feats" id="feats">
+    <br />
+    <br />
+
+
+    <div class="feats__item side-a">
+
+      <div  class="feats__text">
+        <h3>Desenhado para ser fácil</h3>
+        <p>{{ my_include1 | markdownify }}</p>
+      </div>
+
+      <div class="feats__imgContainer">
+        <img class="feats__img" src="/assets/img/feats/1.png" />
+      </div>
+
+    </div>
+
+
+    <div class="feats__item side-b"> 
+
+      <div  class="feats__text feats__side-b">
+        <h3>Ágil</h3>
+        <p>{{ my_include2 | markdownify }}</p>
+      </div>
+      
+      <div class="feats__imgContainer feats__side-a">
+        <img class="feats__img" src="/assets/img/feats/2.png" /> 
+      </div>
+
+    </div>
+
+    <div class="feats__item side-a">
+
+      <div  class="feats__text">
+        <h3>Informativo</h3>
+        <p>{{ my_include3 | markdownify }}</p>
+      </div>
+
+      <div class="feats__imgContainer">
+        <img class="feats__img-no-box" src="/assets/img/feats/3.png" /> 
+      </div>
+
+    </div>
+
+  
+    <div class="feats__item side-b">    
+
+      <div  class="feats__text">
+        <h3>Filtros e mais filtros</h3>
+        <p>{{ my_include2 | markdownify }}</p>
+      </div>
+
+      <div class="feats__imgContainer">
+        <img class="feats__img-no-box" src="/assets/img/feats/4.png" /> 
+      </div>
+
+    </div>
+
+    <div class="feats__item side-a">
+
+      <div  class="feats__text">
+        <h3>Exportação</h3>
+        <p>{{ my_include5 | markdownify }}</p>
+      </div>
+
+      <div class="feats__imgContainer">
+        <img class="feats__img-no-box" src="/assets/img/feats/5.png" /> 
+      </div>
+
+
+    </div>
+
+</section>
+
+

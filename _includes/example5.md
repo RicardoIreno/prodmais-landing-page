@@ -1,0 +1,1 @@
+Os dados obtidos podem ser exportados para diversos formatos.

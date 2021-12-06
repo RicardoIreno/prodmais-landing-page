@@ -1,0 +1,1 @@
+Nos resultados você obterá tanto as informações principais das produções como _hyperlinks_ para as fontes de dados referêntes às obras.

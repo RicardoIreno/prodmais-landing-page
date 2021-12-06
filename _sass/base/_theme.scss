@@ -1,0 +1,60 @@
+$palette: (
+	bg-primary:	  	#fff,
+	fg-primary:	  	#1C9AD1,
+	title-1: 		  	#1C9AD1,
+	title-2: 		  	#1C9AD1,
+	title-3: 		  	#1C9AD1,
+	my-highlight:   #7fd1f5,
+
+  header-bg:      #1C9AD1,
+  header-fg:      #fff,
+	header-a:		  	#fff,
+
+	hero-bg: 				#1C9AD1,
+	hero-title:			#fff,
+	hero-subtitle:	#fff, 
+	hero-border:	  #1C9AD1, // a1e3ff
+	
+	about-bg:		 	  #FFF,
+
+	features-bg: 	  #1C9AD1,
+	features-bd:		#70d4ff,
+	features-ico:   #1C9AD1,
+	
+	feats-titles:  #007eb4,
+	feats-bg:    #fff,
+	
+	testimonial: 	  #beebff,
+	
+	footer-bg:      #5D866C,
+	footer-fg:      #EAEAEA,
+	footer-link:    #EAEAEA,
+	footer-hover:   #D4DFD8,
+	footer-border:  #A5C698,
+
+	btn-1-bg: 	 #41b8eb,
+	btn-1-fg: 	 #fff,
+	btn-1-bd:			#fff,
+	btn-1-hover: #a1e3ff 
+	
+
+);
+
+
+.body-theme { 
+	background-color: _palette(bg-primary);
+}
+
+
+p  { color: _palette(fg-primary); }
+h1 { color: _palette(title-1); }
+h2 { color: _palette(title-2); }
+h3 { color: _palette(title-3); }
+h4 { color: _palette(title-3); }
+
+
+.highlight {color: _palette(my-highlight); }
+
+.link-footer {
+	color: _palette(link-footer);
+} 

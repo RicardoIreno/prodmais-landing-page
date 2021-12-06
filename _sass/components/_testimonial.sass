@@ -1,0 +1,64 @@
+
+.testimonial
+  width: 100%
+  @include flex(column, center, center)
+  background-image: linear-gradient(#fff, _palette(testimonial) ) 
+  border-bottom: 8px solid _palette(features-bd)
+  padding: 1rem
+
+  &__wrapper
+    width: 100%
+    max-width: 900px
+    background-color: #fff
+    @include flex(column, center, center)
+    box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1)
+    border-radius: 8px
+    padding: 1rem
+    margin: 1rem
+
+  img 
+    width: 200px
+    border-radius: 50%
+    margin-bottom: 2rem
+
+@include breakpoint(medium-up)
+  .testimonial
+    padding: 3rem
+    
+    &__wrapper
+      flex-direction: row
+      justify-content: space-between
+
+
+.quotation 
+  font-size: 20px
+  font-style: italic
+  text-align: center
+  text-align: justify
+  quotes: "\201C""\201D""\2018""\2019"
+  padding: 10px 20px
+  line-height: 1.4
+
+  &:before, &:after
+    display: inline
+    height: 0
+    line-height: 0
+    position: relative
+    top: 30px
+    color: _palette(my-highlight)
+    font-size: 3em
+
+  &:before
+    content: open-quote
+    left: -10px
+
+  &:after
+    content: close-quote
+    left: 10px
+
+  &__footer
+    margin: 0
+    text-align: right
+    font-size: 1.5em
+    font-style: italic
+

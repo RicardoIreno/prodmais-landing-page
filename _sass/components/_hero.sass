@@ -1,0 +1,64 @@
+
+$heroHeight: 100vh
+
+@mixin topZero
+  margin: 0
+  padding: 0
+  top: 0
+
+.hero 
+  // background-color: _palette(hero-bg)
+  @include topZero
+  height: $heroHeight
+  border-bottom: _palette(hero-border) 0.5rem solid
+  background-image: url('/assets/img/chart_mobo.jpg')
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center center; 
+
+  &__content
+    @include topZero
+    @include flex(column, center)
+    height: $heroHeight
+    background-color: rgba(28, 154, 209, 0.7 )
+
+  &__logoWrapper
+    margin-top: 3rem
+    @include flex(column, center)
+
+  &__logoWrapper svg
+    fill: #fff
+    margin: 0 auto
+    max-width: 80%
+    width: 400px
+
+  &__text
+    margin: 2rem auto
+    padding: 1rem
+    text-align: center
+
+  &__title, &__subtitle 
+    text-align: center
+
+  &__title
+    color: _palette(hero-title)
+    margin-bottom: .7rem
+    line-height: 2.2rem
+
+  &__subtitle
+    color: _palette(hero-subtitle)
+    font-size: 1.5rem
+    line-height: 1.5rem
+
+
+.logoUnifesp 
+  margin: 0 auto
+  font-family: "Cinzel", sans-serif
+  color: #fff
+  font-size: 2rem
+
+
+@include breakpoint(medium-up)
+  .hero
+    background-image: url('/assets/img/chart_desk.jpg')
+

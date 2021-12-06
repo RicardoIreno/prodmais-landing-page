@@ -1,0 +1,29 @@
+
+.aboutWrapper
+  @include flex(column, center)
+  @include laterais(small)
+  background-color: _pallete(about-bg)
+  margin-top: 3rem
+  padding: 1rem
+
+.about
+  &__symbol
+    margin: 1rem auto
+    max-width: 150px
+    fill: _palette(fg-primary)
+
+  &__text 
+    margin: 0 1rem
+
+  &__text P
+    text-align: justify
+    text-align-last: center
+    font-size: 1.5rem
+  
+
+@include breakpoint(medium-up)
+
+  .about
+    &__text
+      max-width: 900px
+      margin: 4rem auto 6rem auto

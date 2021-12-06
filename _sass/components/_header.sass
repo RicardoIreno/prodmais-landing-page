@@ -1,0 +1,36 @@
+.siteHeader 
+  @include flex(row, center)
+  background-color: _palette(header-bg)
+  width: 100vw
+  // padding-top: 2rem
+
+  &__wrapper 
+    width: 100%
+    @include laterais(small)
+    @include flex(column, center)
+
+  &__link 
+    display: none
+    
+  
+  
+@include breakpoint(medium-up)
+  .siteHeader 
+    width: 100%
+    justify-content: end
+    text-align: right
+    
+    &__wrapper 
+      @include laterais(large)
+    
+    &__link 
+      position: relative
+      display: block 
+      color: _palette(header-a)
+      font-weight: 600
+
+      &:hover
+        color: _palette(my-highlight)
+        
+
+  

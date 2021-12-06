@@ -1,0 +1,67 @@
+/* 
+ * MIXINS
+ */
+@mixin breakpoint($point) 
+  @if $point == small-only 
+    @media (max-width: 42.4375em)
+      @content   
+
+  @else if $point == small-up 
+    @media (min-width: 42.5em)
+      @content
+    
+  @else if $point == medium-only 
+    @media (max-width: 56.1875em)
+      @content
+    
+  @else if $point == medium-up 
+    @media (min-width: 56.25em)
+      @content
+
+  @else if $point == large-only 
+    @media (max-width: 68.6875em)
+      @content
+    
+  @else if $point == large-up 
+    @media (min-width: 68.75em)
+      @content
+    
+  @else 
+    @media (min-width: ($point / 16) + 'em') 
+      @content
+    
+  
+@mixin laterais($point) 
+
+  @include breakpoint(small-only) 
+
+  @if $point == small 
+    padding-left:  0.2rem
+    padding-right: 0.2rem
+
+  @else if $point == medium 
+    padding-left:  1.5rem
+    padding-right: 1.5rem
+
+  @else if $point == large 
+    padding-left:  5rem
+    padding-right: 5rem
+  
+
+  @else 
+    padding-left:  $point
+    padding-right: $point
+  
+
+@mixin flex($direction, $x: false, $y: false ) 
+  display: flex
+  flex-direction: $direction
+
+  @if $x 
+    justify-content: $x
+  
+  @if $y 
+    align-items: $y
+  
+
+

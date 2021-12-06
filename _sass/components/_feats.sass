@@ -1,0 +1,77 @@
+
+.feats
+  @include laterais(small)
+  width: 100%
+
+  &__wrapper
+    position: relative
+    width: 100vw
+    @include flex(column, center)
+    background-color: _palette(feats-bg)
+    padding-top: 3rem
+
+  &__item
+    @include flex(column, center)
+    padding: 1rem
+
+  // &__imgContainer
+  //   display: none
+
+  &__img
+    margin: 0 auto
+    width: 90%
+    box-shadow: 1px 3px 15px 8px rgba(3, 102, 214, 0.3) 
+
+  &__img-no-box
+    margin: 0 auto
+    width: 90%
+
+  &__img:hover
+      opacity: 0.7
+
+  &__text 
+    @include flex(column, top, center)
+    text-align: justify
+
+  &__text h3
+    margin: 1rem
+    font-size: 1.5rem
+    color: _palette(feats-titles)
+    text-align: center
+
+
+@include breakpoint(medium-up)
+
+  .feats
+    @include laterais(large)
+    margin: 2rem auto 
+
+    &__item
+      justify-content: space-evenly
+      margin-bottom: 2rem
+
+    &__imgContainer
+      display: block
+      width: 60%
+
+    &__img
+      width: 100%
+      
+    &__text
+      width: 30%
+      text-align: center
+      align-self: center
+      padding: 1rem
+      margin: 2rem
+
+    &__text 
+      h3
+        font-size: 2rem
+
+      
+
+  .side-a
+    flex-direction: row
+
+  .side-b
+    flex-direction: row-reverse

@@ -1,0 +1,1 @@
+Já na página inicial você encontra opções para refinar sua pesquisa por programa de graduação, ID Lattes dos autores, e período da publicação.
